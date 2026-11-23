@@ -263,3 +263,119 @@ h2 {
 .info-card p {
     color: #aaa;
 }
+
+/* Адаптация для планшетов */
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-card {
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 560px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 310px;
+        height: 300px;
+    }
+
+    .cards,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .about-preview {
+        padding: 60px 0;
+    }
+
+    .about-hero {
+        padding-top: 65px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer p {
+        font-size: 11px;
+    }
+}
+
+/* Эффекты наведения и фокуса */
+a:focus-visible {
+    outline: 2px solid #c6f36a;
+    outline-offset: 5px;
+}
+
+button:focus-visible {
+    outline: 2px solid #c6f36a;
+    outline-offset: 5px;
+}
